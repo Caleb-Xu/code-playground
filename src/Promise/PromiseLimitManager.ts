@@ -33,7 +33,6 @@ export default class PromiseLimitManager<T extends unknown[], U> {
                 break
             }
         }
-        return Promise.all(Array.from(this.promisePool))
     }
 
     append(...args: T) {

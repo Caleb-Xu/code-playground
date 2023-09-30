@@ -19,7 +19,6 @@ export default function makeLimitFn<T extends unknown[], U> (fn: (...val: T) => 
                 break
             }
         }
-        Promise.all(Array.from(promisePool))
     }
 
     return (...args: T) => {

@@ -1,4 +1,4 @@
-import PromiseLimitManager from "../Promise/PromiseLimitManager";
+import PromiseLimitManager from "../Promise/limit/PromiseLimitManager";
 
 const baseTime = +new Date()
 const log = (...args: any[]) => console.log(+new Date() - baseTime, ': ', ...args)
